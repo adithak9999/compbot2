@@ -64,3 +64,11 @@ async def ihelp(e):
             [Button.inline("Back 🔙", data="start")],
         ],
     )
+async def start(event):
+    await event.reply(
+        f"**Send me the video which you want to compress.**\n**Uptime: {str(datetime.now() - START_TIME).split('.')[0]}\n\nA Bot From @Private_Bots\nMade By @Prime_Hritu**",
+        buttons=[
+            [Button.inline("HELP", data="help")],
+            [Button.url("Updates Channel 🇮🇳",url="t.me/Private_Bots")],
+        ],
+    )
