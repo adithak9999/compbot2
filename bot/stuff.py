@@ -59,10 +59,7 @@ async def help(event):
     
 async def ihelp(e):
     await e.reply(
-        f"""**Send Me Any Video I Will Automatically Send It's Compressed Video File 😎\n\nSince I am made by @Prime_Hritu • @Private_Bots**""",
-        buttons=[
-            [Button.inline("Back 🔙", data="starti")],
-        ],
+        f"""**Send Me Any Video I Will Automatically Send It's Compressed Video File 😎\n\nSince I am made by @Prime_Hritu • @Private_Bots**"""
     )
 async def starti(event):
     await event.edit(
