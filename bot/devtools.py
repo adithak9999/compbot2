@@ -5,7 +5,7 @@ from .stuff import *
 
 async def eval(event):
     if str(event.sender_id) not in OWNER and event.sender_id !=DEV:
-        return event.reply("**Sorry You're not An Authorised User!**")
+        return event.reply("**Sorry You Don't Have Permission To Do That**")
     cmd = event.text.split(" ", maxsplit=1)[1]
     old_stderr = sys.stderr
     old_stdout = sys.stdout
