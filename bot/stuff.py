@@ -51,10 +51,10 @@ async def zylern(event):
 
 async def help(event):
     await event.edit(
-        f"""**Send Me Any Video I Will Automatically Send It's Compressed Video File 😎**"""
+        f"""**Send Me Any Video I Will Automatically Send It's Compressed Video File 😎\n\nSince I am made by @Prime_Hritu • @Private_Bots**"""
     )
     
 async def ihelp(e):
     await e.reply(
-        f"""**Send Me Any Video I Will Automatically Send It's Compressed Video File 😎**"""
+        f"""**Send Me Any Video I Will Automatically Send It's Compressed Video File 😎\n\nSince I am made by @Prime_Hritu • @Private_Bots**"""
     )
