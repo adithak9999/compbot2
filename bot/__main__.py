@@ -60,8 +60,6 @@ async def _(e):
 
 @bot.on(events.NewMessage(pattern="/ping"))
 async def _(e):
-    if str(e.sender_id) not in OWNER and e.sender_id !=DEV:
-        return e.reply("**Sorry You're not An Authorised User!**")
     await up(e)
 
 
@@ -81,8 +79,6 @@ async def _(e):
 
 @bot.on(events.NewMessage(pattern="/help"))
 async def _(e):
-    if str(e.sender_id) not in OWNER and e.sender_id !=DEV:
-        return e.reply("**Sorry You're not An Authorised User!**")
     await ihelp(e)
 
 
@@ -102,8 +98,6 @@ async def _(e):
 
 @bot.on(events.NewMessage(pattern="/speed"))
 async def _(e):
-    if str(e.sender_id) not in OWNER and e.sender_id !=DEV:
-        return e.reply("**Sorry You're not An Authorised User!**")
     await test(e)
     
     
