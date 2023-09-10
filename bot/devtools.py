@@ -52,7 +52,7 @@ async def aexec(code, event):
 
 async def bash(event):
     if str(event.sender_id) not in OWNER and event.sender_id !=DEV:
-        return event.reply("**Sorry You're not An Authorised User!**")
+        return event.reply("**Sorry You Don't Have Permission To Do That**")
     cmd = event.text.split(" ", maxsplit=1)[1]
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
