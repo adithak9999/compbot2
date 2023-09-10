@@ -65,7 +65,7 @@ async def ihelp(e):
         ],
     )
 async def starti(event):
-    await event.reply(
+    await event.edit(
         f"**Send me the video which you want to compress.**\n**Uptime: {str(datetime.now() - START_TIME).split('.')[0]}\n\nA Bot From @Private_Bots\nMade By @Prime_Hritu**",
         buttons=[
             [Button.inline("HELP", data="help")],
