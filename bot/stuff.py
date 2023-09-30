@@ -21,7 +21,7 @@ async def start(event):
         f"**Send me the video which you want to compress.**\n**Uptime: {str(datetime.now() - START_TIME).split('.')[0]}\n\nA Bot From @Private_Bots\nMade By @Prime_Hritu**",
         buttons=[
             [Button.inline("HELP", data="help")],
-            [Button.url("Updates Channel 🇮🇳",url="t.me/Private_Bots")],
+            [Button.url("Maintainer",url="t.me/starley_tg")],
         ],
     )
 
@@ -53,7 +53,7 @@ async def help(event):
     await event.edit(
         f"""**Send Me Any Video I Will Automatically Send It's Compressed Video File 😎\n\nSince I am made by @Prime_Hritu • @Private_Bots**""",
         buttons=[
-            [Button.url("Updates Channel 🇮🇳", url="t.me/Private_Bots")],
+            [Button.url("Owner", url="t.me/starley_tg")],
         ],
     )
     
