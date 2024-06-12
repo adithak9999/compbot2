@@ -10,6 +10,9 @@ A Telegram Bot To Encode Videos Using FFMPEG.
 ## Deploy On
 ### Note: Repo is flagged by Heroku to deploy fork this repo and deploy your forked one.
 
+### Deploye to Render
+<a href="https://render.com/deploy"><img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render" width="120"></a>
+  
 `Heroku`
 
 [![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
