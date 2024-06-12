@@ -1,10 +1,17 @@
-FROM python:3.9.2-slim-buster
-RUN mkdir /bot && chmod 777 /bot
-WORKDIR /bot
-ENV DEBIAN_FRONTEND=noninteractive
-RUN apt -qq update && apt -qq install -y git wget pv jq python3-dev ffmpeg mediainfo
-RUN apt-get install neofetch wget -y -f
+FROM python:3.10-slim
 
+# Install build tools
+RUN apt-get update && apt-get install -y build-essential libffi-dev python3-dev
+
+# Create a virtual environment 
+WORKDIR /app
+RUN python3 -m venv .venv
+ENV PATH=".venv/bin:$PATH"
+
+# Install your project's dependencies
+COPY pyproject.toml requirements.txt ./
+RUN pip install -r requirements.txt
 COPY . .
-RUN pip3 install -r requirements.txt
-CMD ["bash","run.sh"]
+
+# Your bot's entry point (e.g., a Python script)
+CMD ["python", "your_bot_script.py"]
