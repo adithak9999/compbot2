@@ -25,6 +25,13 @@ A Telegram Bot To Encode Videos Using FFMPEG.
 
 [![Deploy on Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com/#/deploy?repository=https://github.com/Zylern/TGVid-Comp&vars=[{%22name%22:%22APP_ID%22,%22value%22:%22Your%20App%20Id%22},{%22name%22:%22API_HASH%22,%22value%22:%22Your%20Api%20Hash%22},{%22name%22:%22BOT_TOKEN%22,%22value%22:%22BotToken%22},{%22name%22:%22OWNER%22,%22value%22:%22OwnerId%22},{%22name%22:%22THUMBNAIL%22,%22value%22:%22https://telegra.ph/file/f9e5d783542906418412d.jpg%22}])
 
+<details><summary>Deploy To Koyeb</summary>
+<br>
+<p>
+<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/Devil-Botz/Elsa&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[CHANNELS]&env[ADMINS]&env[PICS]&env[LOG_CHANNEL]&env[AUTH_CHANNEL]&env[CUSTOM_FILE_CAPTION]&env[DATABASE_URI]&env[DATABASE_NAME]&env[COLLECTION_NAME]=Telegram_files&env[SUPPORT_CHAT]&env[IMDB]=True&env[IMDB_TEMPLATE]&env[SINGLE_BUTTON]=True&env[AUTH_GROUPS]&env[P_TTI_SHOW_OFF]=True&run_command=python%20bot.py&branch=main&name=Elsa">
+ <img src="https://www.koyeb.com/static/images/deploy/button.svg">
+</p>
+
 - [Original Repo](https://github.com/1Danish-00/CompressorQueue)
 
 ## Commands
