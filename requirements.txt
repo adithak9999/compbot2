@@ -5,4 +5,4 @@ speedtest-cli
 lxml_html_clean
 https://github.com/1Danish-00/Telethon/archive/master.zip
 html_telegraph_poster
- 
+dnspython==2.3.0
