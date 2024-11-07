@@ -1,6 +1,5 @@
 aiohttp
 python-decouple
-pyaesni
 psutil
 speedtest-cli
 lxml_html_clean
