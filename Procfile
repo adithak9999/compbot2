@@ -1,1 +1,1 @@
-web: python /workspace/app.py
+worker: python3 bot.py
