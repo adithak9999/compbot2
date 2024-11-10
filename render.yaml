@@ -1,22 +1,22 @@
 services:
+  # A Docker web service
   - type: web
+    name: Emilia
+    env: docker
+    region: Singapore
     plan: free
-    name: PYRO-RENAME-BOT
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
-    repo: https://github.com/adithak9999/compbot2
-    branch: main
-    autoDeploy: false
     envVars:
+      - key: PORT
+        value: 80
       - key: BOT_TOKEN
+        # value: BOT_TOKEN  
         sync: false
       - key: API_ID
+        # value: API_ID
         sync: false
       - key: API_HASH
+        # value: API_HASH
         sync: false
-      - key: THUMBNAIL
-        sync: false      
-      - key: ADMIN
+      - key: OWNER_ID
+        # value: OWNER_ID
         sync: false
-  
