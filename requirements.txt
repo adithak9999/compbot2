@@ -7,3 +7,4 @@ https://github.com/1Danish-00/Telethon/archive/master.zip
 html_telegraph_poster
 dnspython==2.3.0
 Flask==2.0.1
+Werkzeug==2.0.1
