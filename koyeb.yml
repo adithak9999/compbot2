@@ -1,3 +1,19 @@
-build:
-  docker:
-      web: Dockerfile
+name: my-python-app
+services:
+  - name: web
+    port: 8000
+    env:
+      - name: FLASK_ENV
+        value: production
+    runtime:
+      type: python
+      version: 3.8
+    source:
+      type: github
+      repository: adithak9999/compbot2
+      branch: main
+    build:
+      image: koyeb/python:3.8
+      command: pip install -r requirements.txt
+    run:
+      command: python app.py
